@@ -19,10 +19,10 @@ public class Progress{
         isLevelComplete = false;
     }
 
-    public Progress(Level aLevel, float aPercentageComplete, boolean aIsLevelComplete) {
+    public Progress(Level aLevel, float aPercentageComplete) {
         level = aLevel;
         percentageComplete = aPercentageComplete;
-        isLevelComplete = aIsLevelComplete;
+        isLevelComplete = getIsLevelComplete();
     }
 
     public Level getLevel() {
@@ -42,7 +42,7 @@ public class Progress{
     }
 
     public boolean getIsLevelComplete(){
-        return isLevelComplete;
+        return percentageComplete == 100;
     }
 
     public void setIsLevelComplete(boolean aIsLevelComplete) {

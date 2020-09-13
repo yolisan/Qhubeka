@@ -20,6 +20,7 @@ public class Employee{
         firstName = null;
         field = new Field();
         progress = new Progress();
+
     }
 
     public Employee(String aFirstName) {
@@ -49,6 +50,10 @@ public class Employee{
 
     public Progress getProgress() {
         return progress;
+    }
+
+    public void setProgress(Progress aProgress) {
+        progress = aProgress;
     }
 
     public int getLevel() {

@@ -13,9 +13,12 @@ public class main{
 
     System.out.println("Testing");
 
-    public Employee = new Employee();
-    Employee.setProgress();
-    Employee.move();
+    Employee testEmployee = new Employee();
+    Level testLevel = new Level(true, 1,2);
+    Progress testProgress = new Progress(testLevel,78);
+    testEmployee.setProgress(testProgress);
+    testEmployee.move(true);
+
 
     }
 }
