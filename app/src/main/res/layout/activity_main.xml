@@ -6,11 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="219dp"
-        tools:srcCompat="@drawable/Frame@1" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
