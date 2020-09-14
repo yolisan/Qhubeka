@@ -9,17 +9,18 @@ package com.fishfingers.qhubeka;
 
 public class Progress{
 
+    int employeeID;
     Level level;
-    float percentageComplete;
+    int percentageComplete;
     boolean isLevelComplete;
 
-    public Progress(){
-        level = new Level();
+    public Progress(int anEmployeeID){
+        employeeID = anEmployeeID;
         percentageComplete = 0;
         isLevelComplete = false;
     }
 
-    public Progress(Level aLevel, float aPercentageComplete) {
+    public Progress(int anEmployeeID, Level aLevel, int aPercentageComplete) {
         level = aLevel;
         percentageComplete = aPercentageComplete;
         isLevelComplete = getIsLevelComplete();
@@ -33,11 +34,11 @@ public class Progress{
         level = aLevel;
     }
 
-    public float getPercentageComplete() {
+    public int getPercentageComplete() {
         return percentageComplete;
     }
 
-    public void setPercentageComplete(float aPercentageComplete) {
+    public void setPercentageComplete(int aPercentageComplete) {
         percentageComplete = aPercentageComplete;
     }
 
@@ -47,6 +48,11 @@ public class Progress{
 
     public void setIsLevelComplete(boolean aIsLevelComplete) {
         isLevelComplete = aIsLevelComplete;
+    }
+
+    public String toString(){
+
+        return Integer.toString(percentageComplete);
     }
 
 

@@ -10,13 +10,16 @@ package com.fishfingers.qhubeka;
 public class Field{
 
     String fieldName;
+    int noOfLevels;
 
-    public void Field(){
+    public Field(){
         fieldName = null;
+        noOfLevels = 0;
     }
 
-    public void Field(String aFieldName){
+    public Field(String aFieldName, int aNoOfLevels){
         fieldName = aFieldName;
+        noOfLevels = aNoOfLevels;
     }
 
     public void setFieldName(String aFieldName){
@@ -25,5 +28,13 @@ public class Field{
 
     public String getFieldName() {
         return fieldName;
+    }
+
+    public int getNoOfLevels() {
+        return noOfLevels;
+    }
+
+    public void setNoOfLevels(int aNoOfLevels) {
+        noOfLevels = aNoOfLevels;
     }
 }

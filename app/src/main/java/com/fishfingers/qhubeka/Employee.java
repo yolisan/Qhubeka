@@ -10,22 +10,30 @@ package com.fishfingers.qhubeka;
 public class Employee{
 
     int ID;
-    String firstName, surname;
+    String firstName;
+    String surname;
     Field field;
     Progress progress;
     int level;
+    String levelName;
 
     public Employee() {
         ID = 0; //use unique id provided by Firebase?
         firstName = null;
-        field = new Field();
-        progress = new Progress();
+        field = null;
+        progress = new Progress(ID);
+        level = 0;
+        //setLevelName(level);
 
     }
 
-    public Employee(String aFirstName) {
-
+    public Employee(int anID, String aFirstName, String aSurname, Field aField, int aLevel) {
+        ID = anID;
         firstName = aFirstName;
+        surname = aSurname;
+        field = aField;
+        level = aLevel;
+        setLevelName(level);
     }
 
     public int getID() {
@@ -60,16 +68,56 @@ public class Employee{
         return level;
     }
 
-    public boolean canMove(){
+    public String getLevelName() {
+        return levelName;
+    }
+
+    /*
+    public int getLevel(int anID) {
+    	return level;
+    }*/
+
+    public void setLevelName(int aLevel) {
+        level = aLevel;
+
+        switch(level) {
+            case 0:
+                levelName = "Medicals";
+                break;
+            case 1:
+                levelName = "Induction";
+            case 2:
+                levelName = "Field Instrumentation";
+                break;
+            case 3:
+                levelName = "PLC";
+            case 4:
+                levelName = "SCADA";
+                break;
+            default :
+                levelName = "Medicals";
+        }
+    }
+
+    public String toString() {
+
+        String employeeDetails = "Name: " + firstName + " " + surname + ", " + "Field: " + field.getFieldName() + ", " + "Level: " + level;
+
+        return employeeDetails;
+    }
+
+    public boolean canLevelUp(){
         return progress.isLevelComplete;
     }
 
-    public String move(boolean canMove){
-        String didMoveString = "Employee moved";
-        String didNotMoveString = "Employee did not move";
+    public String levelUp(boolean canLevelUp){
+        String didMoveString = "Employee moves up a level";
+        String didNotMoveString = "Employee did not level up";
 
-        if(canMove)
+        if(canLevelUp)
         {
+            level++;
+            setLevelName(level);
             return didMoveString;
         }
         else
@@ -77,4 +125,5 @@ public class Employee{
             return didNotMoveString;
         }
     }
+
 }
