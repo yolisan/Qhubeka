@@ -86,6 +86,7 @@ public class Employee{
                 break;
             case 1:
                 levelName = "Induction";
+                break;
             case 2:
                 levelName = "Field Instrumentation";
                 break;
