@@ -21,30 +21,49 @@ public class main{
         testProgress.setPercentageComplete(testEmployee.getLevel()*100/testEmployee.field.getNoOfLevels());
         testEmployee.setProgress(testProgress);
 
-        System.out.println(testEmployee.toString());
-        System.out.println();
-        System.out.println("Level is now: " + testEmployee.getLevel() + " - " + testEmployee.getLevelName());
-        testProgress.setPercentageComplete(testEmployee.getLevel()*100/testEmployee.field.getNoOfLevels());
-        System.out.println("Progress is now " + testProgress.toString()+"%");
-        System.out.println();
-        System.out.println(testEmployee.levelUp(true));
-        testProgress.setPercentageComplete(testEmployee.getLevel()*100/testEmployee.field.getNoOfLevels());
-        System.out.println();
-        System.out.println("Level is now: " + testEmployee.getLevel() + " - " + testEmployee.getLevelName());
-        System.out.println("Progress is now " + testProgress.toString()+"%");
-
-        System.out.println(testEmployee.levelUp(true));
-        testProgress.setPercentageComplete(testEmployee.getLevel()*100/testEmployee.field.getNoOfLevels());
-        System.out.println();
-        System.out.println("Level is now: " + testEmployee.getLevel() + " - " + testEmployee.getLevelName());
-        System.out.println("Progress is now " + testProgress.toString()+"%");
-
-        System.out.println(testEmployee.levelUp(true));
-        testProgress.setPercentageComplete(testEmployee.getLevel()*100/testEmployee.field.getNoOfLevels());
-        System.out.println();
-        System.out.println("Level is now: " + testEmployee.getLevel() + " - " + testEmployee.getLevelName());
-        System.out.println("Progress is now " + testProgress.toString()+"%");
 
         System.out.println(testEmployee.toString());
+        System.out.println();
+        System.out.println("Level is now: " + testEmployee.getLevel() + " - " + testEmployee.getLevelName());
+        testProgress.setPercentageComplete(testEmployee.getLevel()*100/testEmployee.field.getNoOfLevels());
+        System.out.println("Progress is now " + testProgress.toString()+"%");
+        System.out.println();
+        System.out.println(testEmployee.levelUp(true));
+        testProgress.setPercentageComplete(testEmployee.getLevel()*100/testEmployee.field.getNoOfLevels());
+        System.out.println();
+        System.out.println("Level is now: " + testEmployee.getLevel() + " - " + testEmployee.getLevelName());
+        System.out.println("Progress is now " + testProgress.toString()+"%");
+
+        System.out.println(testEmployee.levelUp(true));
+        testProgress.setPercentageComplete(testEmployee.getLevel()*100/testEmployee.field.getNoOfLevels());
+        System.out.println();
+        System.out.println("Level is now: " + testEmployee.getLevel() + " - " + testEmployee.getLevelName());
+        System.out.println("Progress is now " + testProgress.toString()+"%");
+
+        System.out.println(testEmployee.levelUp(true));
+        testProgress.setPercentageComplete(testEmployee.getLevel()*100/testEmployee.field.getNoOfLevels());
+        System.out.println();
+        System.out.println("Level is now: " + testEmployee.getLevel() + " - " + testEmployee.getLevelName());
+        System.out.println("Progress is now " + testProgress.toString()+"%");
+
+        System.out.println(testEmployee.levelUp(true));
+        testProgress.setPercentageComplete(testEmployee.getLevel()*100/testEmployee.field.getNoOfLevels());
+        System.out.println();
+        System.out.println("Level is now: " + testEmployee.getLevel() + " - " + testEmployee.getLevelName());
+        System.out.println("Progress is now " + testProgress.toString()+"%");
+
+        System.out.println(testEmployee.levelUp(true));
+        testProgress.setPercentageComplete(testEmployee.getLevel()*100/testEmployee.field.getNoOfLevels());
+        System.out.println();
+        System.out.println("Level is now: " + testEmployee.getLevel() + " - " + testEmployee.getLevelName());
+        System.out.println("Progress is now " + testProgress.toString()+"%");
+
+        System.out.println(testEmployee.levelUp(true));
+        testProgress.setPercentageComplete(testEmployee.getLevel()*100/testEmployee.field.getNoOfLevels());
+        System.out.println();
+        System.out.println("Level is now: " + testEmployee.getLevel() + " - " + testEmployee.getLevelName());
+        System.out.println("Progress is now " + testProgress.toString()+"%");
+
+        //   System.out.println(testEmployee.toString());
     }
 }

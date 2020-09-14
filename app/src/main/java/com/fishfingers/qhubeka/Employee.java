@@ -92,11 +92,16 @@ public class Employee{
                 break;
             case 3:
                 levelName = "PLC";
+                break;
             case 4:
                 levelName = "SCADA";
                 break;
+            case 5:
+                levelName = "Junior Instrumentation Engineer";
+                break;
             default :
                 levelName = "Medicals";
+                break;
         }
     }
 
@@ -115,7 +120,7 @@ public class Employee{
         String didMoveString = "Employee moves up a level";
         String didNotMoveString = "Employee did not level up";
 
-        if(canLevelUp)
+        if(canLevelUp && level+1 <= field.getNoOfLevels())
         {
             level++;
             setLevelName(level);
